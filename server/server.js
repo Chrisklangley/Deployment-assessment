@@ -16,6 +16,12 @@ const path = require('path')
     res.sendFile(path.join(__dirname,'../client/img/tyler.photo.jpeg'))
 
  })
+  app.get('/styles', (req,res) => {
+    res.sendFile(path.join(__dirname,'../client/index.css'))
+
+ })
+
+
 
 
 
