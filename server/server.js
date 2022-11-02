@@ -8,9 +8,10 @@ const path = require('path')
 
 
  app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'../client/index.html'))
+    res.sendFile(path.join(__dirname,'./client/index.html'))
 
  })
+
 
  const {PORT} =process.env
  const port = PORT || 4006
