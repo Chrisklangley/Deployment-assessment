@@ -12,6 +12,12 @@ const path = require('path')
 
  })
 
+ app.get('/img', (req,res) => {
+    res.sendFile(path.join(__dirname,'../client/img/tyler.photo.jpeg'))
+
+ })
+
+
 
  const {PORT} =process.env
  const port = PORT || 4006
